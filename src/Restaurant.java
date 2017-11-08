@@ -6,10 +6,6 @@ import java.util.concurrent.Semaphore;
 
 /*
 * Muhammad Saleh
-* 20150211
-* 
-* Muhammdad Salah
-* 20150212
 */
 public class Restaurant {
     static Semaphore sem;
@@ -80,22 +76,7 @@ public class Restaurant {
         }
 
     }
-//    public synchronized void run() {
-//
-//        try {
-//            if (!arrivedAndWaiting.contains(name)) {
-//                System.out.println(name + " Arrived");
-//            }
-//            try {
-//                Thread.sleep(2000);
-//            } finally {
-//                sitDown = new SitDown(TableNo, name);
-//                sitDown.start();
-//            }
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//    }
+    
     static class ArrivedAndWaiting extends Thread {
         public void run() {
 
